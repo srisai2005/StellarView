@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StellarView - Explore Space Data</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="stars" id="stars"></div>
+  
+  <div class="container">
+    <div class="header">
+      <h1>🚀 StellarView</h1>
+      <p>Explore the cosmos with NASA's data and upcoming rocket launches</p>
+    </div>
+
+    <div class="nav-tabs">
+      <button class="tab-button active" onclick="switchTab('search')">🔍 NASA Images</button>
+      <button class="tab-button" onclick="switchTab('launches')">🚀 Rocket Launches</button>
+    </div>
+
+    <div id="search-tab" class="tab-content active">
+      <div class="search-section">
+        <div class="search-form">
+          <input type="text" id="searchInput" placeholder="Search for celestial objects, planets, nebulae..." />
+          <button id="fetchBtn">Search Space</button>
+        </div>
+        <div id="results" class="results-grid"></div>
+      </div>
+    </div>
+
+    <div id="launches-tab" class="tab-content">
+      <div class="search-section">
+        <button id="showLaunch">🚀 Show Next Launch</button>
+        <div id="launchInfo" class="launch-info" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rocket-container">
+    <div id="rocket" class="rocket">🚀</div>
+  </div>
+
+  <script src="script.js">
+    // Generate stars
+  
+  </script>
+</body>
+</html>
